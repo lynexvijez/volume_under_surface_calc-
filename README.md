@@ -6,6 +6,8 @@ over the square region:
 0≤𝑥≤1
 0≤y≤1
 It uses double integration via scipy.integrate.dblquad.
+![image](https://github.com/user-attachments/assets/1d5c3a43-7aac-4490-bb8c-c81161cbbba5)
+
 🧰 Requirements
 Python 3.x
 NumPy
