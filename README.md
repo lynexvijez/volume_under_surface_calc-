@@ -48,6 +48,7 @@ within the region \( x \in [0, 3] \) and \( y \in [0, 1] \).
 text
 Volume under surface z = x^2 + y^2: 12.0
 
+![image](https://github.com/user-attachments/assets/c3910d75-60f4-4c6b-b24a-a9971db5a64b)
 
 ---
 ### 🛠️ Requirements
