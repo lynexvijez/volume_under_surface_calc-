@@ -1,24 +1,71 @@
-﻿# volume_under_surface_calc-
-🧮 Project Overview
-This Python script calculates the volume under the surface defined by the equation:
-z=x**2+y**2
-over the square region:
-0≤𝑥≤1
-0≤y≤1
-It uses double integration via scipy.integrate.dblquad.
-![image](https://github.com/user-attachments/assets/1d5c3a43-7aac-4490-bb8c-c81161cbbba5)
+# 🧮 Surface Volume Integration using `scipy.integrate.dblquad`
 
-🧰 Requirements
-Python 3.x
-NumPy
-SciPy
-Install dependencies with:
 
-pip install numpy scipy
+> 📌 A Python script to **compute the volume under a 3D surface** defined by the equation  
+> \[
+z = x^2 + y^2
+\]  
+> over a rectangular region using **SciPy’s double integration** method.
 
-📎 Notes
-The dblquad function performs double integration.
+---
 
-It returns both the computed volume and an estimate of the numerical error.
+## 📂 Project Description
 
-The integrand(y, x) function follows the order expected by dblquad (note y comes first).
+This project performs **numerical double integration** to calculate the volume underneath the surface:
+
+\[
+z = x^2 + y^2
+\]
+
+within the region:
+- \( x \in [0, 3] \)
+- \( y \in [0, 1] \)
+
+It uses the `dblquad()` function from SciPy’s `integrate` module.
+
+---
+
+## 📈 Mathematical Concept
+
+We are evaluating the double integral:
+
+\[
+\text{Volume} = \int_{x=0}^{3} \int_{y=0}^{1} (x^2 + y^2) \, dy \, dx
+\]
+
+This computes the **volume under the 3D surface** defined by:
+
+\[
+z = x^2 + y^2
+\]
+
+within the region \( x \in [0, 3] \) and \( y \in [0, 1] \).
+
+---
+
+## ✅ Output
+
+text
+Volume under surface z = x^2 + y^2: 12.0
+
+
+---
+### 🛠️ Requirements
+Make sure you have the required package installed:
+
+
+pip install scipy
+### 💡 How to Use
+Clone the repo or copy the code into your Python script, then run:
+
+python your_script_name.py
+### ✅ You'll see the volume printed in your terminal.
+
+
+### 📎 License
+MIT License – free to use and modify.
+
+### 🤝 Contribute
+Pull requests and feedback are welcome!
+Feel free to fork and experiment with more surface functions.
+
